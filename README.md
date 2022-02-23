@@ -1,31 +1,41 @@
 # UbuntuServ
 
-1) Шёл по https://info-comp.ru/install-linux-ubuntu-20-04
++ Шёл по https://info-comp.ru/install-linux-ubuntu-20-04
 
 ## Прогрузил убунту, пробовал установить
 
-2) Первое что встретилось - при установки просит отключить Intel RST, но как вариант удалить WIndows, судя по всему изза неё проблемы.
++ Первое что встретилось - при установки просит отключить Intel RST, но как вариант удалить WIndows, судя по всему изза неё проблемы.
 
-3) https://meshok-sovetov.ru/kak-otklyuchit-intel-rapid-storage-technology-windows-10/
++ https://meshok-sovetov.ru/kak-otklyuchit-intel-rapid-storage-technology-windows-10/
 Кратко:
 -заходим в windows, WIN+X - Device Manager
 -ищем драйвер, удаляем *RST_DEL.JPG*
 
-## Результат - не помогло, сломал Windows
+### Результат - не помогло, сломал Windows
 
-1) Помогло сменить тип boot установщика в биосе на Legasy External ( НЕ UEFI )
++ Помогло сменить тип boot установщика в биосе на Legasy External ( НЕ UEFI )
 
-2) *настройка установки_.jpg*
++ *настройка установки_.jpg*
 
-3) пароль - 7151 (для входа не нужен)
++ пароль - 7151 (для входа не нужен)
 
-## Перезагрузил, убунта не загрузилась, сменил на UEFI bootloader, пробую заново
+### Перезагрузил, убунта не загрузилась, сменил на UEFI bootloader, пробую заново
 
-1) всё же отключил в биосе RST
-
-2) установилось
++ всё же отключил в биосе RST
+	> установилось
 
 В первый раз скорее всего была проблема что не извлек флешку установщика
 
 # Инструкция к Серверу
-[installServer](installServer.md)
+[Что делал при установки](installServer.md)
+
+### Фиксы:
+
++ Пробуем установить [chromium браузер](https://losst.ru/ustanovka-chromium-ubuntu-16-04)
+	> `sudo apt update`
+	> `sudo apt install chromium-browser`
+
+Не помогло
+---
+
+
